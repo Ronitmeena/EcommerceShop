@@ -229,6 +229,16 @@ def seed():
     print("Seeded data.")
     
 if __name__ == "__main__":
+    # Temporary route to initialize and seed the database on Render free plan
+@app.route("/initdb")
+def initdb():
     with app.app_context():
         db.create_all()
-    app.run(debug=True)
+        # Call the seed function
+        try:
+            from app import seed
+            seed()
+            return "✅ Database initialized and seeded!"
+        except Exception as e:
+            return f"⚠ Error: {e}"
+
