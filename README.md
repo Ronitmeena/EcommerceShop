@@ -1,4 +1,4 @@
-# Flask E‑Commerce (Demo)
+# Flask E‑Commerce 
 
 A clean, recruiter‑friendly Flask e‑commerce app with:
 - Product listing with **search** and **category filter**
@@ -7,7 +7,7 @@ A clean, recruiter‑friendly Flask e‑commerce app with:
 - **Auth** (register/login/logout) with **bcrypt password hashing**
 - Bootstrap UI with product cards and images
 
-## 1) Quickstart (Local)
+## 1) Quickstart 
 
 ```bash
 # 1. Create and activate a virtual env (Windows PowerShell shown; adapt for Linux/macOS)
@@ -62,8 +62,3 @@ ecommerce_flask/
   flask --app app seed
   ```
 
-## 5) Next Steps (Optional)
-- Add images from your own `/static` folder and use real product data
-- Add pagination on the product list
-- Add address & payment placeholders to checkout
-- Write unit tests for `add-to-cart` and `checkout`
